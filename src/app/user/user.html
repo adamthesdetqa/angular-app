@@ -1,6 +1,6 @@
 <div>
   @for (user of userList; track user.id) {
-    <button>
+    <button (click)="onUserClick(user)">
       <img src="assets/users/{{ user.avatar }}" alt="{{ user.id }}" />
       <span>{{ user.name }}</span>
     </button>
